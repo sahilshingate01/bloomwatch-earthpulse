@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BloomWatch Design System - Nature-Inspired Color Palette */
+
+@layer base {
+  :root {
+    /* Core Nature Colors */
+    --background: 120 20% 98%;
+    --foreground: 140 15% 15%;
+
+    /* Earth Tones */
+    --card: 120 25% 97%;
+    --card-foreground: 140 15% 15%;
+
+    --popover: 120 25% 97%;
+    --popover-foreground: 140 15% 15%;
+
+    /* Forest Green Primary */
+    --primary: 140 60% 25%;
+    --primary-foreground: 120 20% 98%;
+    
+    /* Gentle Sky Secondary */
+    --secondary: 200 45% 88%;
+    --secondary-foreground: 140 60% 25%;
+
+    /* Soft Earth Muted */
+    --muted: 120 15% 92%;
+    --muted-foreground: 140 25% 45%;
+
+    /* Bloom Accent */
+    --accent: 320 65% 85%;
+    --accent-foreground: 140 60% 25%;
+
+    /* Nature Alert */
+    --destructive: 15 75% 55%;
+    --destructive-foreground: 120 20% 98%;
+
+    /* Natural Borders */
+    --border: 120 20% 85%;
+    --input: 120 20% 90%;
+    --ring: 140 60% 25%;
+
+    /* Enhanced Nature Palette */
+    --forest-deep: 140 70% 20%;
+    --forest-medium: 140 60% 35%;
+    --forest-light: 140 40% 75%;
+    
+    --sky-deep: 200 60% 45%;
+    --sky-medium: 200 50% 65%;
+    --sky-light: 200 40% 85%;
+    
+    --bloom-pink: 320 65% 75%;
+    --bloom-purple: 280 55% 75%;
+    --bloom-yellow: 45 85% 75%;
+    
+    --earth-brown: 30 25% 55%;
+    --earth-tan: 35 35% 75%;
+
+    /* Gradients */
+    --gradient-earth: linear-gradient(135deg, hsl(var(--forest-deep)), hsl(var(--sky-deep)));
+    --gradient-bloom: linear-gradient(120deg, hsl(var(--bloom-pink)), hsl(var(--bloom-purple)));
+    --gradient-nature: linear-gradient(180deg, hsl(var(--sky-light)), hsl(var(--forest-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--forest-deep)) 0%, hsl(var(--sky-deep)) 50%, hsl(var(--bloom-pink)) 100%);
+
+    /* Shadows */
+    --shadow-earth: 0 10px 40px -10px hsl(var(--forest-deep) / 0.3);
+    --shadow-bloom: 0 8px 32px -8px hsl(var(--bloom-pink) / 0.4);
+    --shadow-nature: 0 4px 20px -4px hsl(var(--sky-deep) / 0.2);
+
+    /* Animations */
+    --transition-nature: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bloom: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
